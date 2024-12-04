@@ -18,5 +18,6 @@ export const auth = defineAuth({
         'https://main.d22ka6ks9mssy2.amplifyapp.com/'
       ]
     }
-  }
+  },
+  groups: ["bytefly-subscribers", "bytefly-purchasers"]
 });
