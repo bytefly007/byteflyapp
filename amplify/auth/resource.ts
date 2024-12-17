@@ -10,10 +10,12 @@ export const auth = defineAuth({
         scopes: ['profile', 'email', 'openid']
       },
       callbackUrls: [
+        'bytefly://profile',  
         'http://localhost:5173/profile',  // 开发环境
         'https://main.d22ka6ks9mssy2.amplifyapp.com/profile' // 生产环境
       ],
       logoutUrls: [
+        'bytefly://profile',  
         'http://localhost:5173/',
         'https://main.d22ka6ks9mssy2.amplifyapp.com/'
       ]
